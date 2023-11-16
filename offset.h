@@ -1,10 +1,22 @@
 #include <stdint.h>
 #include <vector>
-// Created with ReClass.NET 1.2 by KN4CK3R
 
 struct Vector3
 {
 	float x, y, z;
+};
+
+struct Vector4
+{
+	float x, y, z, w;
+};
+
+struct Matrix4x4
+{
+	float x1, y1, z1, w1;
+	float x2, y2, z2, w2;
+	float x3, y3, z3, w3;
+	float x4, y4, z4, w4;
 };
 
 class entity
@@ -36,3 +48,13 @@ public:
 
 unsigned long offset_entListManager = 0x18AC04;
 unsigned long offset_totalPlayer = 0x18AC0C;
+
+unsigned long offset_width = 0x191ED8;
+unsigned long offset_height = 0x191EDC;
+unsigned long offset_vMatrix = 0x17dfd0;
+
+class vMatrix
+{
+public:
+	Matrix4x4 vMatrix; //0x0000
+}; //Size: 0x0040

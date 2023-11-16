@@ -1,6 +1,8 @@
 #include "proc.h"
 #include "mem.h"
 #include "offset.h"
+#include "esp.h"
+#include "draw.h"
 
 #include <iostream>
 
@@ -39,6 +41,7 @@ int main()
 		return -5;
 
 	// Loop all Entities.
+	// entListManager -> entList -> ent
 	DWORD entAddr{ 0 };
 	std::vector<entity>players(totalPlayer);
 	for (int32_t i{ 0 }; i < totalPlayer -1; i++)
@@ -48,6 +51,9 @@ int main()
 		ReadProcessMemory(hProcess, (LPCVOID)entAddr, &players[i], sizeof(players[i]), 0);
 		std::cout << "[ " << players[i].name << " ]: " << players[i].isTeam << std::endl;
 	}
+
+	// ESP.
+
 
 	// Debug.
 	std::cout << std::endl;

@@ -9,25 +9,51 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="mem">
+      <UniqueIdentifier>{fdf8762d-f773-4981-98ff-ef77303e3b14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{ffb7c977-00a6-4e16-8936-86878f9b9f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="esp">
+      <UniqueIdentifier>{d7f95906-5387-4096-82a3-e25373e013a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{0a8f5615-58e2-4e77-97b1-5d8309df4df1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="proc.cpp">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="esp.cpp">
+      <Filter>esp</Filter>
+    </ClCompile>
     <ClCompile Include="mem.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>OpenGL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="offset.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proc.h">
+      <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="mem.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="esp.h">
+      <Filter>esp</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
+      <Filter>OpenGL</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
